@@ -384,13 +384,12 @@ html {
 
 .collection {
   width: 100%;
-  min-height: 350px;
+  min-height: 400px;
   background: url("./assets/cloud.png") no-repeat top center;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 120px;
+  gap: 30px;
   padding-top: 120px;
   margin-top: -50px;
   position: relative;
@@ -398,19 +397,18 @@ html {
 }
 
 .card {
-  width: 340px;
-  height: 220px;
-  border-radius: 20px;
-
+  width: 350px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 30px 35px 30px;
+  padding-left: 160px;
+  box-sizing: border-box;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  padding-right: 30px;
+  background-size: 100% 100%;
 }
 
 .card1 {
@@ -425,36 +423,6 @@ html {
   background-image: url("./assets/collection/collection3.jpg");
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-}
-
-/* TEXT */
-.content h3 {
-  font-size: 22px;
-  margin: 0;
-}
-
-.content p {
-  font-size: 20px;
-  margin: 0;
-  color: #666;
-}
-
-.content span {
-  font-size: 12px;
-  color: #7cc000;
-  margin-top: 10px;
-}
-
-.content small {
-  font-size: 12px;
-  color: #ff6b6b;
-}
-
 .collection::before {
   content: "";
   position: absolute;
@@ -465,23 +433,116 @@ html {
   background: url("./assets/collection/bee.png") no-repeat center/contain;
 }
 
-.collection::after {
+.card1::after {
   content: "";
   position: absolute;
-  top: 60px;
-  width: 40px;
+  top: 355px;
+  left: 37.5%;
+  width: 20px;
   height: 40px;
   background: url("./assets/collection/butterfly.png") no-repeat center/contain;
 }
 
-.card1 .content h3 {
+.card1 div h3 {
   color: #f97e8c;
+  font-size: 35px;
 }
 
-.card2 .content h3 {
+.card div p {
+  font-size: 30px;
+  color: gray;
+  word-spacing: 4px;
+}
+
+.card2 div h3 {
+  color: #a0b816;
+  font-size: 35px;
+}
+
+.card3 div h3 {
+  color: #73cbeb;
+  font-size: 35px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer span {
   color: #a0b816;
 }
 
-.card3 .content h3 {
-  color: #73cbeb;
+.offer small {
+  color: #ff931f;
+  font-weight: bold;
+}
+
+.brand {
+  width: 100%;
+  height: 300px;
+  background: url("./assets/brandBackground.png") no-repeat center;
+  background-color: #000;
+  margin-top: -85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.brandHeading {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandHeading img {
+  background-size: cover;
+}
+
+.brandHeading .leftArrow {
+  transform: scaleX(-1);
+}
+
+.brandLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.brandLogo div {
+  border: 2px solid #fff;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandLogo div img {
+  width: 120px;
+  background-size: cover;
+}
+
+.brandLogo div:hover {
+  border: 3px solid #f19b3a;
+}
+
+.brandLogo::after {
+  content: "";
+  position: relative;
+  background: url("./assets/brands/arrows.png") no-repeat center/contain;
+  width: 40px;
+  height: 30px;
+  top: -70px;
+  right: 60px;
 }
