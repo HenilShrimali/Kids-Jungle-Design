@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-html {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -505,7 +505,7 @@ html {
   background-size: cover;
 }
 
-.brandHeading .leftArrow {
+.leftArrow {
   transform: scaleX(-1);
 }
 
@@ -545,4 +545,312 @@ html {
   height: 30px;
   top: -70px;
   right: 60px;
+}
+
+.products {
+  width: 100%;
+  min-height: 500px;
+  background: url("./assets/featureProduct/productBackground.jpg") no-repeat
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+}
+
+.leftContainer,
+.rightContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 200px;
+}
+
+.products .mainContainer {
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.productCard {
+  width: 220px;
+  background: #fff;
+  height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  padding-bottom: 10px;
+}
+
+.productCard:hover {
+  border: 2px solid #a9cb3b;
+}
+
+.productCard:hover .addToCart {
+  bottom: 0;
+}
+
+.productCard img {
+  width: 100%;
+  height: 235px;
+}
+
+.productCard p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+}
+
+.price {
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.price span:first-child {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.price span:last-child {
+  color: #f19b3a;
+  font-weight: bold;
+}
+
+.productHeading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.productHeading h1 {
+  font-size: 22px;
+}
+
+.productHeading img {
+  width: 80px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px;
+}
+
+.addToCart {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background: #a0b816;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.leftContainer {
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  height: 100%;
+}
+
+.rightContainer {
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 10px;
+}
+
+.leftTree {
+  position: absolute;
+  top: 0;
+  height: 80%;
+  width: auto;
+  object-fit: contain;
+}
+
+.snake {
+  height: 80px;
+}
+
+.penguin {
+  height: 40px;
+  padding-left: 8px;
+  transform: scaleX(-1);
+}
+
+.rightTree {
+  height: 260px;
+}
+
+.tiger {
+  height: 240px;
+  position: absolute;
+  right: 0px;
+  bottom: -80px;
+  z-index: 10;
+}
+
+.snakeDiv {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.testimonil {
+  background-image: url("./assets/Testimonil.png");
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service {
+  width: 500px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.service h1 {
+  color: white;
+}
+
+.service .title {
+  font-weight: bold;
+  color: #284356;
+}
+
+.service {
+  color: #284356;
+}
+
+.readMore {
+  color: white;
+  font-weight: bold;
+}
+
+.appreaation {
+  width: 400px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.name h1 {
+  font-size: 20px;
+}
+
+.appreaation p {
+  text-align: center;
+  width: 500px;
+  height: 50px;
+}
+
+.imageBox {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-image: url("./assets/testimonil/profile.png");
+  background-size: 180%;
+  background-position: 80% center;
+  background-repeat: no-repeat;
+}
+
+.imageIndicater {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 30px;
+}
+.imageIndicater div {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.imageIndicater div:nth-child(2) {
+  background-color: #fff;
+  opacity: 1;
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+}
+
+.service::after {
+  content: "";
+  position: absolute;
+  right: -58px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: #59aefb;
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: white;
 }
