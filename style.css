@@ -185,6 +185,21 @@ body {
   gap: 4px;
 }
 
+.currency {
+  position: absolute;
+  z-index: 5;
+  top: -30px;
+}
+
+.currency select {
+  border: none;
+}
+
+#countryFlag {
+  width: 20px;
+  height: 20px;
+}
+
 .cartContainer {
   position: relative;
   display: inline-block;
@@ -328,6 +343,7 @@ body {
   gap: 16px;
   padding-left: 200px;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .heroContainer h1 {
@@ -380,6 +396,18 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 500;
+}
+
+.heroContainer::after {
+  content: "";
+  background-image: url("./assets/footer/png.txt");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+  width: 50px;
+  height: 50px;
 }
 
 .collection {
@@ -599,7 +627,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition: 0.3s;
   padding-bottom: 10px;
 }
 
@@ -607,8 +634,17 @@ body {
   border: 2px solid #a9cb3b;
 }
 
+.productCard:hover > div:first-child .addToCart {
+  bottom: 0;
+}
+
 .productCard:hover .addToCart {
   bottom: 0;
+}
+
+.productCard > div:first-child {
+  position: relative;
+  width: 100%;
 }
 
 .productCard img {
@@ -669,6 +705,12 @@ body {
   padding: 0 10px;
 }
 
+.productCard > div:first-child {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
 .addToCart {
   position: absolute;
   bottom: -50px;
@@ -684,6 +726,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   transition: 0.3s;
+  z-index: 2;
 }
 
 .leftContainer {
@@ -775,9 +818,10 @@ body {
   color: #284356;
 }
 
-.readMore {
+.readMoreTestimonil {
   color: white;
-  font-weight: bold;
+  font-size: 12px;
+  font-style: italic;
 }
 
 .appreaation {
@@ -825,6 +869,7 @@ body {
   gap: 4px;
   margin-top: 30px;
 }
+
 .imageIndicater div {
   width: 10px;
   height: 10px;
@@ -835,7 +880,6 @@ body {
 .imageIndicater div:nth-child(2) {
   background-color: #fff;
   opacity: 1;
-
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   transform: scale(1.2);
 }
@@ -1040,13 +1084,13 @@ body {
 
 .seperator {
   width: 100%;
-  margin-top: -30px;
-  line-height: 0;
+  overflow: hidden;
 }
 
 .seperator img {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
