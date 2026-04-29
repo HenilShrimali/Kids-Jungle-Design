@@ -1,0 +1,1996 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+button,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.photos .productHeading {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 8px;
+}
+
+.photos .productHeading h1 {
+  white-space: nowrap;
+}
+
+@media (min-width: 2000px) {
+  .footer {
+    height: 650px;
+    gap: 50px;
+    padding-top: 50px;
+  }
+
+  .contactUs {
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    width: 1400px;
+  }
+
+  .heroContainer {
+    padding-left: 300px;
+  }
+
+  .heroContainer h1 {
+    font-size: 72px;
+  }
+
+  .heroContainer p {
+    font-size: 32px;
+  }
+
+  /* FIX: prevent text from crowding the baby image */
+  .heroContainer h1,
+  .heroContainer p,
+  .heroContainer > div {
+    max-width: 560px;
+  }
+
+  .collection {
+    height: 300px;
+    gap: 30px;
+    padding-top: 120px;
+    margin-top: 0px; /* FIX: was 0px already, keep — no negative overlap */
+  }
+
+  /* FIX: raise hero above collection white bar */
+  .heroContainer {
+    position: relative;
+    z-index: 3;
+  }
+
+  .tiger {
+    z-index: 11;
+    height: 200px;
+    bottom: -60px;
+    right: 10px;
+  }
+
+  .card {
+    width: 420px;
+    height: 280px;
+  }
+
+  .brandLogo div {
+    width: 240px;
+    height: 120px;
+  }
+
+  .babyPhotos img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 250px;
+  }
+
+  .footer {
+    height: 550px;
+    gap: 50px;
+    padding-top: 50px;
+  }
+
+  .blog {
+    width: 330px;
+  }
+
+  .blogImage {
+    width: 330px;
+  }
+
+  .blog .title {
+    font-size: 24px;
+  }
+
+  .blog .para {
+    font-size: 17px;
+  }
+
+  .blog .heading h1 {
+    font-size: 26px;
+  }
+
+  .readMore {
+    font-size: 17px;
+  }
+
+  .date p {
+    font-size: 17px;
+  }
+
+  .footerItemContent {
+    width: 160px;
+  }
+
+  .footerItemContent h1 {
+    font-size: 22px;
+  }
+
+  .footerItemContent .names p,
+  .content p {
+    font-size: 16px;
+  }
+
+  .footerItemContent .names i {
+    font-size: 16px;
+  }
+
+  .footerItemContent .content .view {
+    font-size: 20px;
+  }
+
+  .contactUs {
+    height: 300px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 60px;
+    overflow: hidden;
+  }
+
+  .contactDetails {
+    display: flex;
+    gap: 20px;
+    overflow: visible;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contactDetails div p {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .contactSocial div img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+  .container {
+    width: 1400px;
+  }
+
+  .heroContainer {
+    padding-left: 300px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .heroContainer h1 {
+    font-size: 72px;
+  }
+
+  .heroContainer p {
+    font-size: 32px;
+  }
+
+  .heroContainer h1,
+  .heroContainer p,
+  .heroContainer > div {
+    max-width: 540px;
+  }
+
+  .collection {
+    min-height: 200px;
+    margin-top: -80px;
+  }
+
+  .tiger {
+    z-index: 11;
+    height: 200px;
+    bottom: -60px;
+    right: 10px;
+  }
+
+  .card {
+    width: 420px;
+    height: 280px;
+    margin-left: 30px;
+    align-items: center;
+  }
+
+  .brandLogo div {
+    width: 240px;
+    height: 120px;
+  }
+
+  .babyPhotos img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 250px;
+  }
+
+  .footer {
+    height: 500px;
+    gap: 40px;
+    padding-top: 40px;
+  }
+
+  .blog {
+    width: 320px;
+  }
+
+  .blogImage {
+    width: 320px;
+  }
+
+  .blog .title {
+    font-size: 20px;
+  }
+
+  .blog .para {
+    font-size: 15px;
+  }
+
+  .blog .heading h1 {
+    font-size: 22px;
+  }
+
+  .readMore {
+    font-size: 15px;
+  }
+
+  .date p {
+    font-size: 15px;
+  }
+
+  .footerItemContent {
+    width: 160px;
+  }
+
+  .footerItemContent h1 {
+    font-size: 20px;
+  }
+
+  .footerItemContent .names p,
+  .content p {
+    font-size: 14px;
+  }
+
+  .footerItemContent .names i {
+    font-size: 14px;
+  }
+
+  .footerItemContent .content .view {
+    font-size: 18px;
+  }
+  .contactUs {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 0px;
+    margin-top: 90px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .searchBar input {
+    width: 300px;
+  }
+
+  .logoContainer::before {
+    left: -240px;
+    width: 280px;
+  }
+
+  .logoContainer::after {
+    right: -110px;
+    width: 200px;
+  }
+
+  .account::before {
+    left: -110px;
+    width: 200px;
+  }
+
+  .cartContainer::after {
+    display: none;
+  }
+
+  .productCard {
+    width: 180px;
+  }
+
+  .heroContainer {
+    padding-left: 100px;
+  }
+
+  .heroContainer h1 {
+    font-size: 48px;
+  }
+
+  .collection {
+    gap: 18px;
+  }
+
+  .card {
+    width: 290px;
+  }
+
+  .brandLogo div {
+    width: 160px;
+    height: 80px;
+  }
+
+  .tiger {
+    height: 130px;
+    bottom: -50px;
+  }
+
+  .leftTree {
+    left: -20px;
+  }
+
+  .snake {
+    height: 80px;
+  }
+
+  .rightTree {
+    height: 200px;
+  }
+
+  .contactUs {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .pencilBanner {
+    font-size: 11px;
+    gap: 5px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 30px;
+    text-align: center;
+  }
+
+  .header {
+    height: auto;
+    padding: 12px 16px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .logoContainer::before,
+  .logoContainer::after,
+  .account::before,
+  .cartContainer::after {
+    display: none;
+  }
+
+  .logoContainer img {
+    width: 130px;
+    margin-left: 0;
+  }
+
+  .logoContainer {
+    margin-left: 20px;
+  }
+
+  .navContainer {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .currency {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .navItemContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 100px;
+    gap: 12px;
+  }
+
+  .searchBar {
+    margin-right: 0;
+  }
+
+  .searchBar input {
+    width: 400px;
+  }
+
+  .searchBar::before {
+    display: none;
+  }
+
+  .navButtonsContainer {
+    position: static;
+    margin-top: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .navButtonsContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-nav {
+    flex-wrap: nowrap;
+    gap: 0;
+    width: max-content;
+  }
+
+  .main-nav-item a {
+    font-size: 11px;
+    min-width: 72px;
+    padding: 8px 0;
+  }
+
+  .shop-all-a {
+    width: 110px;
+    left: 0;
+    bottom: 0;
+    clip-path: none;
+    padding: 10px 0;
+  }
+
+  .heroContainer {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    height: 380px;
+  }
+
+  .heroContainer h1 {
+    font-size: 38px;
+  }
+
+  .heroContainer p {
+    font-size: 20px;
+  }
+
+  .collection {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .card {
+    width: 300px;
+    height: 210px;
+    padding: 20px 20px 20px 140px;
+  }
+
+  .card1::after,
+  .collection::before {
+    display: none;
+  }
+
+  .brand {
+    height: 300px;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .brandHeading {
+    margin-top: 50px;
+  }
+
+  .brandLogo {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .brandLogo div {
+    width: 100px;
+    height: 70px;
+  }
+
+  .brandLogo div img {
+    width: 90px;
+  }
+
+  .brandLogo::after {
+    display: none;
+  }
+
+  .products {
+    padding: 40px 20px;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    display: none;
+  }
+
+  .product {
+    gap: 16px;
+  }
+
+  .productCard {
+    width: 150px;
+  }
+
+  .productDetails {
+    padding: 0px 4px;
+    gap: 18px;
+  }
+
+  .productDetails p {
+    font-size: 10px;
+  }
+
+  .rating {
+    gap: 2px;
+  }
+
+  .testimonil {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .service {
+    width: 100%;
+    align-items: center;
+  }
+
+  .service::after,
+  .service::before {
+    display: none;
+  }
+
+  .appreaation {
+    width: 100%;
+  }
+
+  .appreaation p {
+    width: 100%;
+    height: auto;
+  }
+
+  .appreaation::after,
+  .appreaation::before {
+    display: none;
+  }
+
+  .bestSeller {
+    height: auto;
+  }
+
+  .rightTreeSection1,
+  .rightTreeSection2 {
+    display: none;
+  }
+
+  .photos {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .photos .productHeading {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+    padding: 0 10px;
+  }
+
+  .photos .productHeading h1 {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .photos .productHeading img {
+    width: 50px;
+    flex-shrink: 0;
+  }
+
+  .babyPhotos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .babyPhotos img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .newsLetter {
+    padding: 30px 20px;
+  }
+
+  .leftTreeNewsLetter img,
+  .rightTreeNewsLetter img {
+    height: 140px;
+  }
+
+  .textBar {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .textBar div input {
+    width: 300px;
+  }
+
+  .footer {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .blog {
+    width: 180px;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .blogImage {
+    width: 220px;
+  }
+
+  .readMore {
+    font-size: 8px;
+  }
+
+  .date p {
+    font-size: 8px;
+  }
+
+  .blog .title {
+    font-size: 10px;
+  }
+
+  .blog .para {
+    font-size: 8px;
+  }
+
+  .footerItemContent {
+    width: 100px;
+    height: 250px;
+  }
+
+  .names i {
+    font-size: 10px;
+    color: gray;
+  }
+
+  .footerItemContent h1 {
+    color: #333;
+    font-size: 15px;
+  }
+
+  .footerItemContent .names p,
+  .footerItemContent .content p {
+    color: #444;
+    font-size: 11px;
+  }
+
+  .blog .title {
+    color: #333;
+  }
+
+  .blog .para {
+    color: #666;
+  }
+
+  .contactUs {
+    margin-left: 70px;
+    margin-top: 60px;
+    height: auto;
+    gap: 40px;
+    width: 150px;
+    align-items: flex-start;
+    overflow: visible;
+  }
+
+  .contactDetails {
+    gap: 8px;
+  }
+
+  .contactDetails div {
+    align-items: flex-start;
+  }
+
+  .contactDetails div p {
+    color: white;
+    font-size: 13px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .contactSocial {
+    flex-wrap: wrap;
+    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contactSocial div {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactSocial div img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contactSocial::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    bottom: 10px;
+    left: 30%;
+    font-size: 14px;
+    text-align: left;
+    transform: none;
+    white-space: normal;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 939px) {
+  .contactUs {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin: 40px auto 0;
+    padding: 20px 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    overflow: visible;
+    text-align: center;
+  }
+
+  .contactDetails {
+    width: 100%;
+  }
+
+  .contactDetails div {
+    margin-bottom: 6px;
+  }
+
+  .contactDetails div p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: black;
+    word-break: break-word;
+  }
+
+  .contactSocial {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .contactSocial img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 822px) {
+  .pencilBanner {
+    font-size: 11px;
+    gap: 5px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 30px;
+    text-align: center;
+  }
+
+  .header {
+    height: auto;
+    padding: 12px 16px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .logoContainer::before,
+  .logoContainer::after,
+  .account::before,
+  .cartContainer::after {
+    display: none;
+  }
+
+  .logoContainer img {
+    width: 130px;
+    margin-left: 0;
+  }
+
+  .navContainer {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .currency {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .navItemContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .searchBar {
+    margin-right: 0;
+  }
+
+  .searchBar input {
+    width: 260px;
+  }
+
+  .searchBar::before {
+    display: none;
+  }
+
+  .navButtonsContainer {
+    position: static;
+    margin-top: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .navButtonsContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-nav {
+    flex-wrap: nowrap;
+    gap: 0;
+    width: max-content;
+  }
+
+  .main-nav-item a {
+    font-size: 11px;
+    min-width: 72px;
+    padding: 8px 0;
+  }
+
+  .shop-all-a {
+    width: 110px;
+    left: 0;
+    bottom: 0;
+    clip-path: none;
+    padding: 10px 0;
+  }
+
+  .heroContainer {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    height: 380px;
+  }
+
+  .heroContainer h1 {
+    font-size: 38px;
+  }
+
+  .heroContainer p {
+    font-size: 20px;
+  }
+
+  .collection {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .card {
+    width: 300px;
+    height: 210px;
+    padding: 20px 20px 20px 140px;
+  }
+
+  .card1::after,
+  .collection::before {
+    display: none;
+  }
+
+  .brand {
+    height: 300px;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .brandHeading {
+    margin-top: 50px;
+  }
+
+  .brandLogo {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .brandLogo div {
+    width: 100px;
+    height: 70px;
+  }
+
+  .brandLogo div img {
+    width: 90px;
+  }
+
+  .brandLogo::after {
+    display: none;
+  }
+
+  .products {
+    padding: 40px 20px;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    display: none;
+  }
+
+  .product {
+    gap: 16px;
+  }
+
+  .productCard {
+    width: 200px;
+  }
+
+  .productDetails p {
+    font-size: 10px;
+  }
+
+  .testimonil {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .service {
+    width: 100%;
+    align-items: center;
+  }
+
+  .service::after,
+  .service::before {
+    display: none;
+  }
+
+  .appreaation {
+    width: 100%;
+  }
+
+  .appreaation p {
+    width: 100%;
+    height: auto;
+  }
+
+  .appreaation::after,
+  .appreaation::before {
+    display: none;
+  }
+
+  .bestSeller {
+    height: auto;
+  }
+
+  .rightTreeSection1,
+  .rightTreeSection2 {
+    display: none;
+  }
+
+  .photos {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .photos .productHeading {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+    padding: 0 10px;
+  }
+
+  .photos .productHeading h1 {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .photos .productHeading img {
+    width: 50px;
+    flex-shrink: 0;
+  }
+
+  .babyPhotos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .babyPhotos img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .newsLetter {
+    padding: 30px 20px;
+  }
+
+  .leftTreeNewsLetter img,
+  .rightTreeNewsLetter img {
+    height: 140px;
+  }
+
+  .textBar {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .textBar div input {
+    width: 300px;
+  }
+
+  .footer {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .blog {
+    width: 180px;
+    gap: 20px;
+  }
+
+  .blogImage {
+    width: 220px;
+  }
+
+  .readMore {
+    font-size: 8px;
+  }
+
+  .date p {
+    font-size: 8px;
+  }
+
+  .blog .title {
+    font-size: 10px;
+  }
+
+  .blog .para {
+    font-size: 8px;
+  }
+
+  .footerItemContent {
+    width: 100px;
+  }
+
+  .footerItemContent h1 {
+    color: #333;
+    font-size: 15px;
+  }
+
+  .footerItemContent .names p,
+  .footerItemContent .content p {
+    color: #444;
+    font-size: 11px;
+  }
+
+  .footerItemContent .names i {
+    color: #444;
+  }
+
+  .blog .title {
+    color: #333;
+  }
+
+  .blog .para {
+    color: #666;
+  }
+
+  .contactUs {
+    margin-left: 0;
+    margin-top: -80px;
+    height: auto;
+    gap: 20px;
+    width: 180px;
+    align-items: flex-start;
+    overflow: visible;
+  }
+
+  .contactDetails {
+    gap: 8px;
+  }
+
+  .contactDetails div {
+    align-items: flex-start;
+  }
+
+  .contactDetails div p {
+    color: black !important;
+    font-size: 13px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .contactSocial {
+    flex-wrap: wrap;
+    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contactSocial div {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactSocial div img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contactSocial::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+    transform: none;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 8px 12px 0;
+    height: auto;
+  }
+
+  .logoContainer img {
+    width: 100px;
+  }
+
+  .navContainer {
+    width: 100%;
+  }
+
+  .navItemContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .searchBar {
+    order: 1;
+    flex: 0 0 100%;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchBar input {
+    width: 280px;
+    font-size: 12px;
+    padding: 7px 36px 7px 12px;
+  }
+
+  .contact {
+    order: 2;
+    font-size: 12px;
+  }
+
+  .account {
+    order: 2;
+    position: relative;
+    gap: 4px;
+  }
+
+  .currency {
+    position: static;
+    top: auto;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .account div p {
+    font-size: 12px;
+  }
+
+  .currency select {
+    font-size: 11px;
+  }
+
+  #countryFlag {
+    width: 16px;
+    height: 16px;
+  }
+
+  .cartContainer img {
+    width: 48px;
+  }
+
+  .cartContainer p {
+    font-size: 13px;
+  }
+
+  .main-nav-item a {
+    font-size: 10px;
+    min-width: 60px;
+    padding: 7px 0;
+  }
+
+  .shop-all-a {
+    width: 92px;
+    clip-path: none;
+    padding: 8px 0;
+  }
+
+  .shop-all-a svg {
+    width: 12px;
+    height: 10px;
+  }
+
+  .heroContainer {
+    height: 300px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    gap: 12px;
+  }
+
+  .heroContainer h1 {
+    font-size: 28px;
+  }
+
+  .heroContainer p {
+    font-size: 16px;
+  }
+
+  .heroContainer div {
+    width: 200px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .collection {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px 30px;
+    gap: 12px;
+    margin-top: 0;
+  }
+
+  .card {
+    width: 92%;
+    height: 150px;
+    overflow: hidden;
+    background-size: auto 100%;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    box-sizing: border-box;
+  }
+
+  .card .text h3 {
+    font-size: 18px !important;
+    white-space: nowrap;
+  }
+
+  .card .text p {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .card .offer span,
+  .card .offer small {
+    font-size: 10px;
+    display: block;
+  }
+
+  .brand {
+    margin-top: 0;
+  }
+
+  .brandHeading {
+    margin-top: 80px;
+  }
+
+  .brandHeading h1 {
+    font-size: 18px;
+  }
+
+  .brandLogo div {
+    width: 120px;
+    height: 60px;
+  }
+
+  .brandLogo div img {
+    width: 80px;
+  }
+
+  .productCard {
+    width: 160px;
+    height: 310px;
+  }
+
+  .productCard img {
+    height: 180px;
+  }
+
+  .productCard p {
+    font-size: 12px;
+  }
+
+  .productHeading h1 {
+    font-size: 18px;
+  }
+
+  .testimonil {
+    padding: 24px 16px;
+  }
+
+  .service h1 {
+    font-size: 22px;
+  }
+
+  .photos .productHeading {
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 0 8px;
+  }
+
+  .photos .productHeading h1 {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .photos .productHeading img {
+    width: 30px;
+  }
+
+  .babyPhotos img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .leftTreeNewsLetter,
+  .rightTreeNewsLetter {
+    display: none;
+  }
+
+  .textBar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .textBar div {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .textBar div input {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .textBar button {
+    width: 100%;
+    height: 44px;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .searchGiraffe,
+  .sparrow {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px 50px;
+    gap: 24px;
+  }
+
+  .blog,
+  .blogImage {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .footerItemContent {
+    width: 100%;
+    height: auto;
+  }
+
+  .footerItemContent .content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .footerItemContent h1 {
+    color: #333;
+  }
+
+  .footerItemContent .names p {
+    color: #444;
+  }
+
+  .footerItemContent .names i {
+    color: #444;
+  }
+
+  .contactUs {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .contactDetails div p {
+    font-size: 13px;
+    color: white;
+    line-height: 1.5;
+  }
+
+  .contactSocial {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .contactSocial div {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactSocial::after {
+    position: static;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: left;
+    transform: none;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 578px) {
+  .collection {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 40px;
+  }
+
+  .card {
+    width: 300px;
+    height: 145px;
+    overflow: hidden;
+    background-size: auto 100%;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    box-sizing: border-box;
+  }
+
+  .card .text h3 {
+    font-size: 17px !important;
+    white-space: nowrap;
+  }
+  .card .text p {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .card .offer span,
+  .card .offer small {
+    font-size: 10px;
+    display: block;
+  }
+
+  .offer span {
+    font-size: 11px;
+  }
+
+  .offer small {
+    font-size: 10px;
+  }
+
+  .brandHeading {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .pencilBanner {
+    font-size: 10px;
+    gap: 4px;
+  }
+
+  .header {
+    padding: 6px 8px 0;
+    height: auto;
+  }
+
+  .logoContainer img {
+    width: 80px;
+  }
+
+  .navItemContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .searchBar {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchBar input {
+    width: 240px;
+    font-size: 11px;
+    padding: 6px 32px 6px 10px;
+  }
+
+  .contact {
+    font-size: 11px;
+  }
+
+  .contact img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .account div p {
+    font-size: 11px;
+  }
+
+  #countryFlag {
+    width: 14px;
+    height: 14px;
+  }
+
+  .currency select {
+    font-size: 10px;
+  }
+
+  .cartContainer img {
+    width: 42px;
+  }
+
+  .cartContainer p {
+    font-size: 12px;
+  }
+
+  .main-nav-item a {
+    font-size: 9px;
+    min-width: 52px;
+    padding: 6px 0;
+  }
+
+  .shop-all-a {
+    width: 78px;
+    clip-path: none;
+    padding: 7px 0;
+  }
+
+  .shop-all-a svg {
+    display: none;
+  }
+
+  .heroContainer {
+    height: 240px;
+    padding-left: 16px;
+    gap: 10px;
+  }
+
+  .heroContainer h1 {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+
+  .heroContainer p {
+    font-size: 14px;
+  }
+
+  .heroContainer div {
+    width: 170px;
+    height: 40px;
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .collection {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px 20px;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .card {
+    width: 92%;
+    max-width: 340px;
+    height: 130px;
+    overflow: hidden;
+    background-size: auto 100%;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    box-sizing: border-box;
+  }
+
+  .card .text h3 {
+    font-size: 15px !important;
+    white-space: nowrap;
+  }
+
+  .card .text p {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .card .offer span,
+  .card .offer small {
+    font-size: 9px;
+    display: block;
+  }
+
+  .brandHeading {
+    margin-top: 80px;
+  }
+
+  .brandHeading h1 {
+    font-size: 14px;
+  }
+
+  .brandHeading img {
+    width: 100px;
+  }
+
+  .brandLogo {
+    gap: 10px;
+  }
+
+  .brandLogo div {
+    width: 100px;
+    height: 52px;
+  }
+
+  .brandLogo div img {
+    width: 70px;
+  }
+
+  .brandBox {
+    border: 2px solid #fff;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .brandBox img {
+    width: 100px;
+    background-size: cover;
+  }
+
+  .brandBox:hover {
+    border: 3px solid #f19b3a;
+  }
+
+  .products {
+    padding: 30px 10px;
+  }
+
+  .product {
+    gap: 12px;
+  }
+
+  .productCard {
+    width: 145px;
+    height: 290px;
+  }
+
+  .productCard img {
+    height: 160px;
+  }
+
+  .productCard p {
+    font-size: 11px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .rating i {
+    font-size: 12px;
+  }
+
+  .productHeading {
+    gap: 8px;
+  }
+
+  .productHeading h1 {
+    font-size: 16px;
+  }
+
+  .productHeading img {
+    width: 50px;
+  }
+
+  .testimonil {
+    padding: 20px 12px;
+  }
+
+  .service h1 {
+    font-size: 20px;
+  }
+
+  .service p {
+    font-size: 13px;
+  }
+
+  .name h1 {
+    font-size: 16px;
+  }
+
+  .photos .productHeading {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: 4px;
+    padding: 0 6px;
+  }
+
+  .photos .productHeading h1 {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .photos .productHeading img {
+    width: 24px;
+    flex-shrink: 0;
+  }
+
+  .babyPhotos {
+    gap: 0;
+  }
+
+  .babyPhotos img {
+    width: 20%;
+    height: 70px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .newsLetter {
+    padding: 20px 12px;
+  }
+
+  .newsLetter p {
+    font-size: 13px;
+  }
+
+  .textBar div input {
+    height: 44px;
+    font-size: 13px;
+  }
+
+  .seperator img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    min-height: 40px;
+  }
+
+  .footer {
+    padding: 20px 14px 44px;
+    gap: 20px;
+  }
+
+  .blog .heading h1 {
+    font-size: 18px;
+  }
+
+  .blog .title {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .footerItemContent h1 {
+    font-size: 15px;
+    color: #333;
+  }
+
+  .footerItemContent .names p {
+    font-size: 11px;
+    color: #444;
+  }
+
+  .footerItemContent .names i {
+    color: #444;
+  }
+
+  .contactDetails div p {
+    color: white;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .contactSocial {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .contactSocial div img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contactSocial::after {
+    font-size: 10px;
+    position: static;
+    display: block;
+    margin-top: 8px;
+    transform: none;
+    white-space: normal;
+  }
+}
+
+@media print {
+  .pencilBanner,
+  .navButtonsContainer,
+  .heroContainer,
+  .brand,
+  .testimonil,
+  .newsLetter,
+  .seperator,
+  .photos {
+    display: none !important;
+  }
+
+  .footer {
+    background: none;
+    color: #000;
+  }
+}

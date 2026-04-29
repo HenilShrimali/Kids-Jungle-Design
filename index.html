@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kids Jungle</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -15,14 +17,13 @@
   </head>
   <body>
 
-    <div>
-      <section class="pencilBanner">
+    <section class="pencilBanner">
         <p>LIMITED TIME OFFERS:</p>
         <b>MID-SEASON SALE UP TO 70% OFF.</b>
         <a href="#" class="shopNow">SHOP NOW.</a>
-      </section>
+    </section>
 
-      <section class="header">
+    <section class="header">
         <div class="container">
           <div class="logoContainer">
             <a href="#"><img src="./assets/header/logo.svg" alt="logo" /></a>
@@ -103,8 +104,7 @@
             </li>
           </ul>
         </div>
-      </section>
-    </div>
+    </section>
 
     <div class="heroContainer">
       <h1>Baby Store Styles</h1>
@@ -158,23 +158,39 @@
       </div>
 
       <div class="brandLogo">
-        <div>
-          <img src="./assets/brands/avent.png" alt="" />
-        </div>
-        <div>
-          <img src="./assets/brands/beco.png" alt="" />
-        </div>
-        <div>
-          <img src="./assets/brands/Adiri Logo.png" alt="" />
-        </div>
-        <div>
-          <img src="./assets/brands/cleanWell.jpg" alt="" />
-        </div>
-        <div>
-          <img src="./assets/brands/babySay.jpg" alt="" />
-        </div>
-        <div class="lastBrand">
-          <img src="./assets/brands/silkberrybaby.png" alt="" />
+        <div class="swiper brandSwiper" style="width: 100%; overflow: hidden;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="display: flex; justify-content: center;">
+              <div class="brandBox">
+                <img src="./assets/brands/avent.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide" style="display: flex; justify-content: center;">
+              <div class="brandBox">
+                <img src="./assets/brands/beco.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide" style="display: flex; justify-content: center;">
+              <div class="brandBox">
+                <img src="./assets/brands/Adiri Logo.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide" style="display: flex; justify-content: center;">
+              <div class="brandBox">
+                <img src="./assets/brands/cleanWell.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide" style="display: flex; justify-content: center;">
+              <div class="brandBox">
+                <img src="./assets/brands/babySay.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide" style="display: flex; justify-content: center;">
+              <div class="brandBox">
+                <img src="./assets/brands/silkberrybaby.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -364,28 +380,49 @@
         </p>
       </div>
 
-      <div class="appreaation">
-        <div class="imageBox"></div>
-        <div class="name">
-          <h1>Thomas Marks -</h1>
-          <span> Creative Designer</span>
-        </div>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          quo, dolore molestias perspiciatis eum animi unde possimus voluptates
-          ducimus sint ratione
-        </p>
-        <div class="imageIndicater">
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="appreaation" style="position: relative; width: 400px;">
+        <div class="swiper testimonialSwiper" style="width: 100%; overflow: hidden; padding-bottom: 40px;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+              <div class="imageBox"></div>
+              <div class="name">
+                <h1>Thomas Marks -</h1>
+                <span> Creative Designer</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                quo, dolore molestias perspiciatis eum animi unde possimus voluptates
+                ducimus sint ratione
+              </p>
+            </div>
+            <div class="swiper-slide" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+              <div class="imageBox"></div>
+              <div class="name">
+                <h1>Sarah Jane -</h1>
+                <span> UI/UX Expert</span>
+              </div>
+              <p>
+                Vestibulum viverra consequat ante et convallis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="swiper-slide" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+              <div class="imageBox"></div>
+              <div class="name">
+                <h1>John Smith -</h1>
+                <span> Developer</span>
+              </div>
+              <p>
+                Dolore molestias perspiciatis eum animi unde possimus voluptates ducimus sint ratione dolor sit.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
 
     <div class="products bestSeller">
-      <div class="leftContainer">
+      <div class="leftContainer bestSellerLeftContainer">
         <div>
           <img
             src="./assets/bestSellerLeftTree.png"
@@ -407,7 +444,8 @@
         </div>
 
         <div class="product">
-          <div class="productCard">
+
+          <div class="productCard sellerCard">
             <div>
               <img src="./assets/featureProduct/featPro1.jpg" alt="" />
             </div>
@@ -427,7 +465,7 @@
             </div>
           </div>
 
-          <div class="productCard">
+          <div class="productCard sellerCard">
             <div>
               <img src="./assets/featureProduct/featPro2.jpg" alt="" />
             </div>
@@ -447,7 +485,7 @@
             </div>
           </div>
 
-          <div class="productCard">
+          <div class="productCard sellerCard">
             <div>
               <img src="./assets/featureProduct/featProd3.jpg" alt="" />
             </div>
@@ -467,7 +505,7 @@
             </div>
           </div>
 
-          <div class="productCard">
+          <div class="productCard sellerCard">
             <div>
               <img src="./assets/featureProduct/featProd4.jpg" alt="" />
             </div>
@@ -488,7 +526,7 @@
             </div>
           </div>
 
-          <div class="productCard">
+          <div class="productCard sellerCard">
             <div>
               <img src="./assets/featureProduct/featProd5.jpg" alt="" />
             </div>
@@ -682,8 +720,7 @@
       </div>
     </div>
 
-  
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
